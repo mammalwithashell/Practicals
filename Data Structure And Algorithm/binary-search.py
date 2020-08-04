@@ -1,5 +1,5 @@
 def binary_search(arr, value, start=0, end=None):
-    if end == None:
+    if end is None:
         end = len(arr) - 1
 
     if start <= end:

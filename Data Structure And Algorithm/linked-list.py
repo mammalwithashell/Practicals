@@ -9,7 +9,7 @@ class LinkedList:
         self.head = None
 
     def append(self, value):
-        if self.head == None:
+        if self.head is None:
             self.head = Element(value)
         else:
             temp = self.head
@@ -39,7 +39,7 @@ class LinkedList:
         # get the previous node
         prevNode = self.get_position(position - 1)
         node = Element(value)
-        if prevNode == None:
+        if prevNode is None:
             node.next = self.head
             self.head = node
         else:
